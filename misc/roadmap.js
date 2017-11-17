@@ -118,7 +118,6 @@ function resetGame(){
   buildBoard();
 }
 
-
 function buildBoard(){
     $('.turn#topFirstPlayer').text(game.score.w + ' pts.');
     $('.turn#topSecondPlayer').text(game.score.b + ' pts.');
@@ -182,7 +181,6 @@ function hamburgerMenu(){
 
 }
 
-
 function updateDisplay() {
         //Update the board position and points in the display
         checkForLegalMoves();
@@ -214,8 +212,6 @@ function checkWinState(){
     // $('.modal-content').append(restartButton);
   } 
 }
-
-
 
 function checkForLegalMoves(){
   game.legalMoves = [];
@@ -372,7 +368,6 @@ function passBtn() {
     }
     updateDisplay();
 }
-
 
 function checkSameRound() {
     console.log("Current pass Button CLick" + game.passButtClick);
